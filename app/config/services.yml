@@ -1,35 +1,41 @@
-# Learn more about services, parameters and containers at
-# https://symfony.com/doc/current/service_container.html
-parameters:
-    #parameter_name: value
-
 services:
-    # default configuration for services in *this* file
+
     _defaults:
-        # automatically injects dependencies in your services
         autowire: true
-        # automatically registers your services as commands, event subscribers, etc.
         autoconfigure: true
-        # this means you cannot fetch services directly from the container via $container->get()
-        # if you need to do this, you can override this setting on individual services
         public: false
 
-    # makes classes in src/AppBundle available to be used as services
-    # this creates a service per class whose id is the fully-qualified class name
-    AppBundle\:
-        resource: '../../src/AppBundle/*'
-        # you can exclude directories or files
-        # but if a service is unused, it's removed anyway
-        exclude: '../../src/AppBundle/{Entity,Repository,Tests}'
+    _instanceof:
+        Infrastructure\Action\Action:
+            public: true
+            tags: ['controller.service_arguments']
 
-    # controllers are imported separately to make sure they're public
-    # and have a tag that allows actions to type-hint services
-    AppBundle\Controller\:
-        resource: '../../src/AppBundle/Controller'
+    # ALIASES
+    Domain\Model\Article\ArticleRepositoryInterface: '@article_repository_inmemory'
+
+    # FORMS
+    Infrastructure\Form\Type\CreateArticleFormType: ~
+
+    # ACTIONS
+    Infrastructure\Action\Article\CreateArticleAction: ~
+    Infrastructure\Action\Article\ListArticleAction: ~
+
+    # COMMAND HANDLERS
+    Application\CommandHandler\CreateArticleCommandHandler:
         public: true
-        tags: ['controller.service_arguments']
+        tags:
+            - { name: command_handler, handles: Application\Command\CreateArticleCommand }
 
-    # add more services, or override services that need manual wiring
-    # AppBundle\Service\ExampleService:
-    #     arguments:
-    #         $someArgument: 'some_value'
+    # QUERIES
+    Application\Query\ListArticleQuery: ~
+
+    # REPOSITORIES
+    article_repository_doctrine:
+        class: Infrastructure\Repository\Doctrine\ArticleRepository
+        arguments: ['Domain\Model\Article\Article']
+        factory: ['@doctrine.orm.entity_manager', getRepository]
+
+    article_repository_inmemory:
+      class: Infrastructure\Repository\InMemory\ArticleRepository
+
+

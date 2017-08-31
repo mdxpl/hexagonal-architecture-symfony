@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_3_horizontal_layout.html.twig' %}
+
+{% block body %}
+    <div id="container">
+
+        <div class="col-lg-8 col-lg-offset-1">
+
+            <h3>New article</h3>
+            <hr>
+            {{ form(form) }}
+            <hr>
+            <a href="{{ path('article_list') }}">&laquo; Back to the list</a>
+        </div>
+
+    </div>
+{% endblock %}

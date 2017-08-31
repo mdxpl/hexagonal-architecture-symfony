@@ -1,3 +1,7 @@
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
+article_create:
+    path: '/article/create'
+    defaults: { _controller: 'Infrastructure\Action\Article\CreateArticleAction' }
+
+article_list:
+    path: '/article/list'
+    defaults: { _controller: 'Infrastructure\Action\Article\ListArticleAction' }

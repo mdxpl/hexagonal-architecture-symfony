@@ -1,0 +1,9 @@
+{% for label, messages in app.flashes %}
+    {% for message in messages %}
+        <div class="alert alert-{{ label }}" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">{{ label|upper }}:</span>
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endfor %}

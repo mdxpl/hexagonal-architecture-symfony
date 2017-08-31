@@ -15,6 +15,20 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
+          <root url="phar://$MODULE_DIR$/../Webnalist.com/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
+          <root url="phar://$MODULE_DIR$/../Webnalist.com/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
+          <root url="phar://$MODULE_DIR$/../Webnalist.com/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
+          <root url="phar://$MODULE_DIR$/../Webnalist.com/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="PHP" type="php">
         <CLASSES>
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/aws/aws-sdk-php" />
@@ -110,7 +124,6 @@
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/predis/predis" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/presta/sitemap-bundle" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/psr/cache" />
-          <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/psr/container" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/psr/http-message" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/rollbar/rollbar" />
@@ -133,6 +146,7 @@
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/staffim/rollbar-bundle" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/stof/doctrine-extensions-bundle" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/symfony/expression-language" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/symfony/monolog-bundle" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/symfony/phpunit-bridge" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/symfony/polyfill-apcu" />
@@ -247,7 +261,6 @@
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/predis/predis" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/presta/sitemap-bundle" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/psr/cache" />
-          <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/psr/container" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/psr/http-message" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/rollbar/rollbar" />
@@ -270,6 +283,7 @@
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/staffim/rollbar-bundle" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/stof/doctrine-extensions-bundle" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/symfony/expression-language" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/symfony/monolog-bundle" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/symfony/phpunit-bridge" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/symfony/polyfill-apcu" />
@@ -289,22 +303,6 @@
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/willdurand/jsonp-callback-validator" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/willdurand/negotiation" />
           <root url="file://$MODULE_DIR$/../Webnalist.com/vendor/xemlock/htmlpurifier-html5" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="PHARS">
-        <CLASSES>
-          <root url="phar://$MODULE_DIR$/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
-          <root url="phar://$MODULE_DIR$/../Webnalist.com/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
-          <root url="phar://$MODULE_DIR$/../Webnalist.com/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
-          <root url="phar://$MODULE_DIR$/../Webnalist.com/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
-        </CLASSES>
-        <SOURCES>
-          <root url="phar://$MODULE_DIR$/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
-          <root url="phar://$MODULE_DIR$/../Webnalist.com/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
-          <root url="phar://$MODULE_DIR$/../Webnalist.com/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
-          <root url="phar://$MODULE_DIR$/../Webnalist.com/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
         </SOURCES>
       </library>
     </orderEntry>

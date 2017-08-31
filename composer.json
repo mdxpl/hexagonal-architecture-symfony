@@ -1,10 +1,13 @@
 {
-    "name": "mdx/ddd",
+    "name": "mdx/hex",
     "license": "proprietary",
     "type": "project",
     "autoload": {
         "psr-4": {
-            "AppBundle\\": "src/AppBundle"
+            "Application\\": "src/Application/",
+            "Domain\\": "src/Domain/",
+            "Infrastructure\\": "src/Infrastructure/",
+            "": "src/"
         },
         "classmap": [
             "app/AppKernel.php",

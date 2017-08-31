@@ -1,0 +1,17 @@
+Domain\Model\Article\Article:
+  type: entity
+  table: articles
+  repositoryClass: Infrastructure\Repository\Doctrine\ArticleRepository
+  id:
+    id:
+      type: string
+      generator:
+        strategy: UUID
+  fields:
+    title:
+      type: string
+      length: 255
+    isPublished:
+      type: boolean
+    content:
+      type: text
