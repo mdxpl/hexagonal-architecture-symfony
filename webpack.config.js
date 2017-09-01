@@ -9,11 +9,7 @@ Encore
     .enableSassLoader()
     .autoProvidejQuery()
     .enableSourceMaps(!Encore.isProduction())
-    // .enableVersioning()
-    .enableSassLoader(function (sassOptions) {
-    }, {
-        resolve_url_loader: true
-    })
+    .enableSassLoader(function (sassOptions) {}, {resolve_url_loader: true})
     .configureBabel(function (babelConfig) {
         babelConfig.presets.push('es2017');
     })

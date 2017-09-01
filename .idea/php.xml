@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="Behat">
-    <behat_settings>
-      <PhpTestFrameworkSettings executable_path="$PROJECT_DIR$/../Webnalist.com/vendor/behat/behat/bin/behat" />
-    </behat_settings>
-  </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
-</project>
